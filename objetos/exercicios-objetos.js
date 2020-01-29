@@ -34,6 +34,18 @@ var cachorro = {
   idade: 10,
   cor: 'preto',
   latir(pessoa) {
+    //Teste com operador ternário
     (pessoa === 'homem') ? console.log('Au au au!') : console.log('Nada');
   }
 }
+
+//Strings são imutaveis
+
+var nomeTeste = dadosPessoais.nome;
+console.log(nomeTeste);
+nomeTeste.replace('pe', 'cio'); //Não altera o valor da variavel, se quiser trabalhar com o novo valor deve armazenar em outra variavel
+console.log(nomeTeste);
+
+nomeTesteAtualizado = nomeTeste.replace('pe', 'cio');
+console.log(nomeTesteAtualizado);
+console.log(nomeTeste);
